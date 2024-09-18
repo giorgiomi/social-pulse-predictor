@@ -6,13 +6,12 @@ from shapely.geometry import Point
 import matplotlib.pyplot as plt
 
 # file path
-file_path = sys.argv[1]
-data_path = '../../data/raw/' + file_path
+data_path = '../../data/raw/social-pulse-trentino.geojson'
 
 # load the data
 with open(data_path) as json_file:
     data = json.load(json_file)
-print(data.keys()) #print keys
+#print(data.keys()) #print keys
 
 # load the grid
 grid_path = '../../data/raw/trentino-grid.geojson'

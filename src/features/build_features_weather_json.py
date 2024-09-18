@@ -6,8 +6,7 @@ from shapely.geometry import Point
 import matplotlib.pyplot as plt
 
 # file path
-file_path = sys.argv[1]
-data_path = '../../data/raw/' + file_path
+data_path = '../../data/raw/meteotrentino-weather-station-data.json'
 
 # load the data
 with open(data_path) as json_file:
@@ -23,13 +22,13 @@ data_features = gpd.GeoDataFrame(data['features'])
 print(data_features.columns)
 
 # geometry column
-data_features['geometry'] = data_features['geomPoint.geom'].apply(lambda x:Point(x['coordinates'][0], x['coordinates'][1]))
-data_features.drop(columns=['geomPoint.geom'],inplace=True)
+# data_features['geometry'] = data_features['geomPoint.geom'].apply(lambda x:Point(x['coordinates'][0], x['coordinates'][1]))
+# data_features.drop(columns=['geomPoint.geom'],inplace=True)
 
 # plot the data
 # plot temperature
-plt.scatter(data_features['timestamp'], data_features['minTemperature'])
-plt.xlabel('Timestamp')
-plt.ylabel('Minimum Temperature')
-plt.title('Minimum Temperature Variation')
-plt.show()
+# plt.scatter(data_features['timestamp'], data_features['minTemperature'])
+# plt.xlabel('Timestamp')
+# plt.ylabel('Minimum Temperature')
+# plt.title('Minimum Temperature Variation')
+# plt.show()
