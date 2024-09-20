@@ -132,7 +132,7 @@ df = df.drop([col for col in df.columns if col.startswith('winds.')], axis=1)
 #print(df)
 
 # save the dataframe
-df.to_csv('../../data/processed/twitter_weather.csv', index=False)
+df.to_csv('../../data/interim/twitter_weather.csv', index=False)
 
 # Plot temperature with respect to date and time
 # plt.figure(figsize=(12, 6))
