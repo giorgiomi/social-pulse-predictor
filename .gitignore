@@ -90,3 +90,6 @@ target/
 
 # Nicola's PC stuff
 .ini
+
+# data folder
+!data/raw/*
