@@ -1,7 +1,7 @@
 social-pulse-predictor
 ==============================
 
-Data science project to analyse social data in correlation with other data for the Trentino region
+Data science project to analyse social data in correlation with other data for the Trentino region. All work is contained in the `notebooks` folder (EDA, classification and regression).
 
 Project Organization
 ------------
